@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+    tools:context=".CustomerModule.CheckoutCartActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/quantum_black_100"
+        android:text="Your order id is:"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/waterwhite"
+        android:layout_height="match_parent">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+
+                            android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Thankyou"
+                                    android:layout_gravity="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorblue"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:padding="10dp" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:padding="15dp"
+                            android:text="Order placed  and will be delivered on the registered address"
+                            android:textColor="@color/colorbluenavy"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                                android:layout_width="283dp"
+                                android:layout_height="269dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorwhite"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/tick" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="serif"
+                                android:gravity="center"
+                            android:layout_margin="10dp"
+                                android:padding="15dp"
+                                android:textColor="@color/colorbluenavy"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                            <LinearLayout
+                                android:id="@+id/proceed_to_book"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="15dp"
+                                android:layout_marginTop="20dp"
+
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+
+                                    android:layout_gravity="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="#fff"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:padding="10dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
+

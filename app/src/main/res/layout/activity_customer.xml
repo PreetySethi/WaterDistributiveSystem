@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="fill_horizontal"
+    android:background="@drawable/login_common_page"
+    android:padding="10dp"
+    tools:context=".CustomerModule.CustomerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_horizontal"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/circlelogo"
+                        app:civ_border_color="@color/colordarkblue"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:id="@+id/tv_namesh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:text="Hi..!!"
+                        android:textColor="@color/colorwhite" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layer_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="201dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageButton
+                            android:id="@+id/btn_profile"
+                            android:layout_width="170dp"
+                            android:layout_height="137dp"
+                            android:background="@drawable/diaimgbuttondesign"
+                            android:elevation="3dp"
+                            android:layout_marginStart="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/account" />
+
+                        <TextView
+                            android:id="@+id/txt_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-black"
+                            android:text="profile"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorwhite" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="201dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageButton
+                            android:id="@+id/btn_purchase"
+                            android:layout_width="170dp"
+                            android:layout_height="137dp"
+                            android:background="@drawable/diaimgbuttondesign"
+                            android:elevation="3dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/purchase" />
+
+                        <TextView
+                            android:id="@+id/txt_purchase"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-black"
+                            android:text="purchase"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorwhite" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layer_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="201dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageButton
+                            android:id="@+id/btn_promotion"
+                            android:layout_width="170dp"
+                            android:layout_height="137dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/diaimgbuttondesign"
+                            android:elevation="3dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/promotionn" />
+
+                        <TextView
+                            android:id="@+id/txt_product"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Promotion"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorwhite" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="201dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageButton
+                            android:id="@+id/btn_point"
+                            android:layout_width="170dp"
+                            android:layout_height="137dp"
+                            android:background="@drawable/diaimgbuttondesign"
+                            android:elevation="3dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/point" />
+
+                        <TextView
+                            android:id="@+id/txt_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-black"
+                            android:text="points"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorwhite" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layer_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="201dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity=""
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/btn_product"
+                            android:layout_width="170dp"
+                            android:layout_height="137dp"
+                            android:layout_gravity="center"
+
+                            android:background="@drawable/diaimgbuttondesign"
+                            android:elevation="3dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/products" />
+
+                        <TextView
+                            android:id="@+id/txt_promotion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-black"
+                            android:text="feedback"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorwhite" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

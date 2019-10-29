@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tilt"
+    tools:context=".CustomerModule.PointsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/point_show"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="20dp"
+                                android:textColor="@color/colorwhite"
+                                android:layout_gravity="center"
+                                android:text="Thank you "
+                                android:fontFamily="sans-serif-black"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="start"
+                                android:gravity="start"
+                                android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:gravity="start"
+                                        android:background="@drawable/ic_back_arrow" />
+                                    <TextView
+                                        android:id="@+id/point_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="3dp"
+                                        android:layout_marginStart="20dp"
+                                        android:textSize="15dp"
+                                        android:fontFamily="sans-serif-black"
+                                        android:gravity="center"
+                                        android:textColor="@color/colorwhite"
+                                        android:layout_gravity="center"
+                                        android:text="You will receive points on every purchase" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/pointshow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="20dp"
+                                android:textColor="@color/colorwhite"
+                                android:layout_gravity="center"
+                                android:text="Points Earned till now......"
+                                 android:fontFamily="sans-serif-black"/>
+
+                            <LinearLayout
+                                android:layout_width="300dp"
+                                android:layout_height="300dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="20dp"
+                                android:background="@drawable/circledesign"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/pointsEarned"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textSize="50sp"
+                                        android:textColor="@color/colorwhite"
+                                        android:text="1700" />
+
+                                    <TextView
+                                        android:id="@+id/txt_point"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textColor="@color/colorwhite"
+                                        android:textSize="20sp"
+                                        android:textAllCaps="true"
+                                        android:text="Aqua Points" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:background="@drawable/box2"
+                                android:layout_height="match_parent">
+                               <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textboxdesign"
+                                    android:gravity="center"
+                                   android:layout_margin="10dp"
+                                    android:padding="10dp"
+                                    android:text="Reedem"
+                                   android:fontFamily="sans-serif-black"
+                                   android:textAllCaps="true"
+                                    android:textColor="@color/colorPrimaryDark"/>
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textboxdesign"
+                                    android:gravity="center"
+                                    android:layout_margin="10dp"
+                                    android:padding="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:text="Earn"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorPrimaryDark"/>
+
+                            </LinearLayout>
+                           <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="vertical"
+                                android:layout_gravity=""
+                                android:padding="5dp"
+                                android:background="@drawable/box2"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/reedem"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/colorwhite"/>
+
+                            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

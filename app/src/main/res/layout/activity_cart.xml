@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:layout_weight="2">
+    </androidx.recyclerview.widget.RecyclerView>
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorwhite"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Delivery Address" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/add_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Change"
+                android:textAllCaps="true"
+                android:textColor="@color/colorbluenavy"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>-->
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Address showing done while registration" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_chevron_right_black_24dp"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorbluenavy"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>-->
+
+   <LinearLayout
+       android:id="@+id/proceed_to_book"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="@color/colorPrimary">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Place Order"
+           android:gravity="start"
+           android:textColor="#fff"
+           android:textStyle="bold"
+           android:padding="10dp"
+           android:textSize="24sp" />
+       <View
+           android:id="@+id/divider4"
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_weight="1"
+           android:background="?android:attr/listDivider" />
+
+       <TextView
+           android:layout_marginLeft="5dp"
+           android:id="@+id/grand_total_cart"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Qr 2300"
+           android:padding="10dp"
+           android:textSize="24sp"
+           android:textColor="#fff"
+           android:textStyle="bold"
+           android:layout_marginRight="10dp"/>
+   </LinearLayout>
+
+</LinearLayout>
